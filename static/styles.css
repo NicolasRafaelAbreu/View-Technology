@@ -1,0 +1,646 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**     MOVIL       **/
+@media (max-width: 767px) {
+    .desktop{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .wrapper{
+        width: 100%;
+        height: 6vh;
+        color: #fff;
+        background-color: #191c32;
+        position: fixed;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 2%;
+    }
+    .menu{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .menu li{
+        list-style: none;
+    }
+    .menu a{
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+    .menu .active{
+        color: aqua;
+        border-radius: 8px;
+    }
+    .menu a:hover{
+        background-color: aqua;
+        color: #191c32;
+        transition: ease-in .3s;
+        border-radius: 8px;
+    }
+    .imgPresent{
+        width: 110%;
+        height: 50vh;
+    }
+    .contentPropuesta{
+        width: 110%;
+        height: 164vh;
+    }
+    .tituloPropuesta{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 180%;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .contentEtiquetaPropuesta{
+        justify-content: center;
+        height: 60vh;
+    }
+    .etiquetaP{
+        background-color: #92a1ff;
+        width: 90%;
+        height: 50vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+        text-align: center;
+        border-radius: 12px;
+    }
+    .etiquetaP .imgP{
+        width: 100%;
+        height: 24vh;
+    }
+    .etiquetaP .tituloP{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 140%;
+        margin-top: 3%;
+    }
+    .etiquetaP .textP{
+        padding: 3%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 120%;
+        margin-top: 4%;
+    }
+    .etiquetaP .infoP{
+        padding: 3%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 110%;
+        margin-top: 4%;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    }
+    .contentEquipo{
+        width: 110%;
+        height: 65vh;
+        background-color: rgb(228, 123, 58);
+    }
+    .tituloEquipo{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 180%;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 4%;
+        padding-bottom: 3%;
+    }
+    .contentEtiquetaEquipo{
+        display: flex;
+        justify-content: center;
+        height: 60vh;
+    }
+    .contentEquipo .etiquetaE{
+        background-color: #ffffff;
+        width: 50%;
+        height: 70%;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: center;
+        border-radius: 12px;
+    }
+    .contentEquipo .equipoImg{
+        width: 60%;
+        border-radius: 50px;
+        margin-top: 30%;
+    }
+    .contentEquipo .tituloE{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 140%;
+        margin-top: 8%;
+    }
+    .contentEquipo .textE{
+        padding: 3%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 110%;
+        margin-top: 2%;
+    }
+    .contentContact{
+        width: 100%;
+        height: 68vh;
+    }
+    .contentContact .contenteContactArea{
+        width: 110%;
+        height: 62vh;
+    }
+    .contentContact .formContact{
+        text-align: center;
+        background-color: #191c32;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 4%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-radius: 12px;
+    }
+    .contentContact .tituloContact{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 240%;
+        margin-top: 4%;
+        color: #fff;
+    }
+    .contentContact .inputContact{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 100%;
+        border-radius: 12px;
+        padding: 2%;
+        border: none;
+        width: 90%;
+        color: #191c32;
+        margin-top: 5%;
+    }
+    .contentContact .textAreaInput{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 100%;
+        border-radius: 12px;
+        padding: 2%;
+        border: none;
+        width: 90%;
+        color: #191c32;
+        margin-top: 5%;
+    }
+    .contentContact .btnContact{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding: 2%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 140%;
+        border-radius: 12px;
+        background-color: aqua;
+        border: none;
+        color: #191c32;
+        font-weight: bold;
+    }
+    .copy{
+        width: 110%;
+        background-color: #191c32;
+        padding: 3%;
+        text-align: center;
+    }
+    .copy .textCopy{
+        color: #fff;
+        font-size: 90%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+
+/**     TABLET      **/
+@media (min-width: 768px) and (max-width: 990px){
+    .desktop{
+        display: none;
+    }
+    .movil{
+        display: none;
+    }  
+    .wrapper{
+        width: 100%;
+        height: 5vh;
+        color: #fff;
+        background-color: #191c32;
+        position: fixed;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 2%;
+    }
+    .brand span{
+        color: aqua;
+    }
+    .menu{
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+    }
+    .menu li{
+        list-style: none;
+    }
+    .menu a{
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+    .menu .active{
+        color: aqua;
+        border-radius: 8px;
+    }
+    .menu a:hover{
+        background-color: aqua;
+        color: #191c32;
+        transition: ease-in .3s;
+        border-radius: 8px;
+    }
+    .imgPresent{
+        width: 100%;
+        height: 80vh;
+    }
+    .contentPropuesta{
+        width: 100%;
+        height: 90vh;
+    }
+    .tituloPropuesta{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 240%;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .contentEtiquetaPropuesta{
+        display: flex;
+        justify-content: center;
+        height: 60vh;
+    }
+    .etiquetaP{
+        background-color: #92a1ff;
+        width: 30%;
+        margin-left: 1%;
+        margin-right: 1%;
+        text-align: center;
+        border-radius: 12px;
+    }
+    .etiquetaP .imgP{
+        width: 100%;
+        height: 24vh;
+    }
+    .etiquetaP .tituloP{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 140%;
+        margin-top: 3%;
+    }
+    .etiquetaP .textP{
+        padding: 3%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 120%;
+        margin-top: 4%;
+    }
+    .etiquetaP .infoP{
+        padding: 3%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 110%;
+        margin-top: 4%;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    }
+    .contentEquipo{
+        width: 100%;
+        height: 90vh;
+        background-color: rgb(228, 123, 58);
+    }
+    .tituloEquipo{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 240%;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 4%;
+        padding-bottom: 3%;
+    }
+    .contentEtiquetaEquipo{
+        display: flex;
+        justify-content: center;
+        height: 60vh;
+    }
+    .contentEquipo .etiquetaE{
+        background-color: #ffffff;
+        width: 30%;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: center;
+        border-radius: 12px;
+    }
+    .contentEquipo .equipoImg{
+        width: 60%;
+        border-radius: 50px;
+        margin-top: 30%;
+    }
+    .contentEquipo .tituloE{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 140%;
+        margin-top: 8%;
+    }
+    .contentEquipo .textE{
+        padding: 3%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 110%;
+        margin-top: 2%;
+    }
+    .contentContact{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+    }
+    .contentContact .contenteContactArea{
+        width: 100%;
+        height: 92vh;
+    }
+    .contentContact .formContact{
+        text-align: center;
+        background-color: #191c32;
+        width: 90%;
+        height: 70vh;
+        margin-left: 5%;
+        padding-top: 1%;
+        padding-bottom: 2%;
+        margin-top: 1%;
+        border-radius: 12px;
+    }
+    .contentContact .tituloContact{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 180%;
+        margin-top: 2%;
+        color: #fff;
+    }
+    .contentContact .inputContact{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 80%;
+        border-radius: 12px;
+        padding: 1%;
+        border: none;
+        width: 70%;
+        color: #191c32;
+        margin-top: 2%;
+    }
+    .contentContact .textAreaInput{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 80%;
+        border-radius: 12px;
+        padding: 1%;
+        border: none;
+        width: 70%;
+        color: #191c32;
+        margin-top: 2%;
+    }
+    .contentContact .btnContact{
+        margin-top: 2%;
+        padding: 2%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 80%;
+        width: 27%;
+        border-radius: 12px;
+        background-color: aqua;
+        border: none;
+        color: #191c32;
+        font-weight: bold;
+    }
+    .copy{
+        background-color: #191c32;
+        padding: 1%;
+        text-align: center;
+        margin-top: 2%;
+    }
+    .copy .textCopy{
+        color: #fff;
+        font-size: 90%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+
+/**     ESCRITORIO       **/
+@media (min-width: 991px) {
+    .tablet{
+        display: none;
+    }
+    .movil{
+        display: none;
+    }
+    .wrapper{
+        width: 100%;
+        height: 8vh;
+        color: #fff;
+        background-color: #191c32;
+        position: fixed;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 1%;
+    }
+    .brand span{
+        color: aqua;
+    }
+    .menu{
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+    }
+    .menu li{
+        list-style: none;
+    }
+    .menu a{
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+    .menu .active{
+        color: aqua;
+        border-radius: 8px;
+    }
+    .menu a:hover{
+        background-color: aqua;
+        color: #191c32;
+        transition: ease-in .3s;
+        border-radius: 8px;
+    }
+    .imgPresent{
+        width: 100%;
+        height: 90vh;
+        margin-top: 4%;
+    }
+    .contentPropuesta{
+        width: 100%;
+        height: 90vh;
+    }
+    .tituloPropuesta{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 240%;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .contentEtiquetaPropuesta{
+        display: flex;
+        justify-content: center;
+        height: 60vh;
+    }
+    .etiquetaP{
+        background-color: #92a1ff;
+        width: 20%;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: center;
+        border-radius: 12px;
+    }
+    .etiquetaP .imgP{
+        width: 100%;
+        height: 24vh;
+    }
+    .etiquetaP .tituloP{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 140%;
+        margin-top: 3%;
+    }
+    .etiquetaP .textP{
+        padding: 3%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 120%;
+        margin-top: 4%;
+    }
+    .etiquetaP .infoP{
+        padding: 3%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 110%;
+        margin-top: 4%;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    }
+    .contentEquipo{
+        width: 100%;
+        height: 90vh;
+        background-color: rgb(228, 123, 58);
+    }
+    .tituloEquipo{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 240%;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 4%;
+        padding-bottom: 3%;
+    }
+    .contentEtiquetaEquipo{
+        display: flex;
+        justify-content: center;
+        height: 60vh;
+    }
+    .contentEquipo .etiquetaE{
+        background-color: #ffffff;
+        width: 20%;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: center;
+        border-radius: 12px;
+    }
+    .contentEquipo .equipoImg{
+        width: 60%;
+        border-radius: 50px;
+        margin-top: 30%;
+    }
+    .contentEquipo .tituloE{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 140%;
+        margin-top: 8%;
+    }
+    .contentEquipo .textE{
+        padding: 3%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 110%;
+        margin-top: 2%;
+    }
+    .contentContact{
+        width: 100%;
+        height: 92vh;
+        display: flex;
+    }
+    .contentContact .contenteContactArea{
+        width: 50%;
+        height: 82vh;
+    }
+    .contentContact .imgLogo{
+        width: 100%;
+        height: 92vh;
+    }
+    .contentContact .formContact{
+        text-align: center;
+        background-color: #191c32;
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 4%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-radius: 12px;
+    }
+    .contentContact .tituloContact{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 240%;
+        margin-top: 4%;
+        color: #fff;
+    }
+    .contentContact .inputContact{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 100%;
+        border-radius: 12px;
+        padding: 2%;
+        border: none;
+        width: 70%;
+        color: #191c32;
+        margin-top: 5%;
+    }
+    .contentContact .textAreaInput{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 100%;
+        border-radius: 12px;
+        padding: 2%;
+        border: none;
+        width: 70%;
+        color: #191c32;
+        margin-top: 5%;
+    }
+    .contentContact .btnContact{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding: 2%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 140%;
+        border-radius: 12px;
+        background-color: aqua;
+        border: none;
+        color: #191c32;
+        font-weight: bold;
+    }
+    .copy{
+        background-color: #191c32;
+        padding: 1%;
+        text-align: center;
+    }
+    .copy .textCopy{
+        color: #fff;
+        font-size: 90%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
